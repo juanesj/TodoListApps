@@ -1,0 +1,110 @@
+/* Fondo fresco y ligero */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f9f9f9, #dfe9f3); /* Blanco a azul claro */
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* Títulos suaves y legibles */
+h1, h2, p {
+  margin: 10px 0;
+  color: #4a90e2; /* Azul claro más suave */
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px #ffffff, 0px 0px 5px #4a90e2;
+}
+
+/* Botones refinados */
+button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #4a90e2, #ff8c42); /* Azul claro a naranja suave */
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+  box-shadow: 0px 4px 10px rgba(74, 144, 226, 0.3);
+}
+
+button:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(90deg, #ff8c42, #4a90e2); /* Invertir colores */
+  box-shadow: 0px 6px 15px rgba(255, 140, 66, 0.5);
+}
+
+/* Enlaces modernos */
+a {
+  text-decoration: none;
+  color: #4a90e2; /* Azul claro */
+  font-weight: bold;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+a:hover {
+  color: #ff8c42; /* Naranja suave */
+  text-shadow: 0px 0px 5px #ff8c42;
+}
+
+/* Tarjetas ligeras */
+.card {
+  background: linear-gradient(135deg, #ffffff, #f0f4f8); /* Blanco a gris claro */
+  border: 1px solid #4a90e2; /* Azul claro */
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 10px rgba(74, 144, 226, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(74, 144, 226, 0.3);
+}
+
+/* Botones dentro de tarjetas */
+.card button {
+  margin-top: 10px;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Ajuste en dispositivos pequeños */
+@media (max-width: 768px) {
+  button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+}
+
